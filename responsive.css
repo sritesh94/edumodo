@@ -1,0 +1,150 @@
+@media screen and (max-width:1024px){
+    .container{
+        width: 100%;
+    }
+    .nav-menu #navmenu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 11;
+        top: 0;
+        right: 0;
+        background-color: #ffc178;
+        padding: 20px;
+        width: 450px;
+        height: 100vh;
+        justify-content: stretch;
+        display: none;
+    }
+    .nav-menu ul li a{
+        color: #fff;
+    }
+    .nav-menu .nav-item {
+        padding: 15px;
+    }
+    .nav-link.apply {
+        color: #fff;
+        background:none;
+        padding:0;
+        border-radius:0;
+        padding: 0;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger .times{
+        display: none;
+    }
+
+    #hero-container{
+        width: 100%;
+    }
+    #hero-container .hero-image-section img{
+        width: 100%;
+    }
+    .hero-image-section::after{
+        content: '';
+    }
+    .hero-image-section::before{
+        content: '';
+    }
+    .hero-section-contents{
+        display: none;
+    }
+    #department{
+        margin-top: 0;
+    }
+    #university{
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 50px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        justify-items: center;
+    }
+    .card{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .course-cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+    .university-right {
+        text-align: center;
+    }
+    .university-header h4{
+        font-size: 2rem;
+    }
+    #footer {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 40px;
+        padding: 30px;
+    }
+    .rows-para {
+        padding-top: 15px;
+    }
+
+}
+@media screen and (max-width:760px){
+
+    .nav-menu #navmenu{
+        width: 250px;
+    }
+    /* Department Section */
+
+    .motto{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+    .card-title h3{
+        font-size: 1.5rem;
+    }
+
+    /* University Section */
+    #university{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .university-footer {
+        grid-template-columns: 1fr;
+    }
+    .card-img img{
+        width: 100%;
+    }
+
+    /* Courses Section */
+
+    .course-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer Section */
+
+    div#footer {
+        grid-template-columns: 1fr;
+    }
+
+    /* Copyright Section */
+    .copyright .container{
+        flex-direction: column;
+    }
+    .copyright .copyright-right ul{
+        flex-direction: column;
+    }
+    .copyright-right li{
+        padding: 15px;
+    }
+}
